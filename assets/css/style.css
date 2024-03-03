@@ -1,9 +1,11 @@
 :root{
     --primary-text-color: #000;
     --secondary-text-color: #FFFFFF;
-    --primary-bg-color: #cfcfcf;
+
+    --primary-bg-color: #ececec;
     --secondary-bg-color: #343333;
-    --tertiary-bg-color: #911A54;
+    --tertiary-bg-color: #641d3f;
+    --quartenary-bg-color: #000;
 }
 
 * {
@@ -13,8 +15,39 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    background-image: url(/assets/images/models.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.0rem;
+}
+
+section.header-h1-container{
+    position: relative;
+    text-align: center;
+    padding-top: 14.0rem;
+}
+
+.header-h1{
+    background-color: var(--quartenary-bg-color);
+    display: inline-block;
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+}
+
+.header-h1 h1{
+    font-size: 3.8rem;
+    color: var(--secondary-text-color);
+}
+
+.header-h1 h3{
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+}
+
 header > div:nth-of-type(1){
-    height: 3.2rem;
+    height: 1.2rem;
     width: 100%;
     background-color: var(--tertiary-bg-color);
 }
@@ -22,8 +55,81 @@ header > div:nth-of-type(1){
 .header-title-container{
     background-color: var(--tertiary-bg-color);
     width: fit-content;
+    margin: auto;
 }
 
 .header-title{
     font-size: 1.6rem;
+    color: var(--secondary-text-color);
+    padding: 0.8rem 2.0rem;
 }
+
+main{
+    height: fit-content;
+    background-color: var(--primary-bg-color);
+    max-width: 1195px;
+}
+
+main > section > h2{
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+main > section > h4{
+    margin-top: 2.6rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.padding-img{
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    background-color: var(--tertiary-bg-color);border-radius: 50%;
+    display: inline-block;
+}
+
+.grupo-icones{
+    margin-top: 4.0rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.icone > h4{
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.t-shirt{
+    background-image: url(/assets/images/shirt-solid.svg);
+}
+.truck{
+    background-image: url(/assets/images/truck-solid.svg);
+}
+.dollar{
+    background-image: url(/assets/images/dollar-sign-solid.svg);
+}
+.tag{
+    background-image: url(/assets/images/tag-solid.svg);
+}
+
+.bottom-p{
+    display: inline-block;
+    margin-top: 4.0rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
