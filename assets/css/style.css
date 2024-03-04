@@ -6,6 +6,7 @@
     --secondary-bg-color: #343333;
     --tertiary-bg-color: #641d3f;
     --quartenary-bg-color: #000;
+    --quinary-bg-color: #d7d7d7;
 }
 
 * {
@@ -17,7 +18,7 @@
 
 header{
     background-image: url(/assets/images/models.jpg);
-    background-position: center;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.0rem;
@@ -62,23 +63,24 @@ header > div:nth-of-type(1){
     font-size: 1.6rem;
     color: var(--secondary-text-color);
     padding: 0.8rem 2.0rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 main{
     height: fit-content;
     background-color: var(--primary-bg-color);
-    max-width: 1195px;
 }
 
 main > section > h2{
     padding-top: 1.6rem;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
 main > section > h4{
     margin-top: 2.6rem;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     text-align: center;
 }
 
@@ -125,11 +127,41 @@ main > section > h4{
 }
 
 .bottom-p{
-    display: inline-block;
+    margin: auto;
     margin-top: 4.0rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    border-bottom: 1px solid black;
+    padding: 4.0rem;
+    text-decoration: underline;
 }
 
+.sponsors{
+    height: fit-content;
+    background-color: var(--quinary-bg-color);
+}
+
+.sponsors h4 {
+    color: var(--primary-text-color);
+    font-size: 2.0rem;
+    padding: 4.0rem;
+    text-align: center;
+}
+
+.sponsors-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #641d3f;
+    height: fit-content;
+}
+footer p{
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 1.8rem;
+    color: var(--secondary-text-color);
+}
